@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* 🔥 New Gradient Background */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 420px;
+
+  /* 🔥 Glass Effect */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+
+  padding: 25px;
+  border-radius: 16px;
+
+  /* 🔥 Soft Shadow */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.todo-container h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* Input */
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Button */
+.input-box button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #00c6ff;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  transform: scale(1.05);
+}
+
+/* Stats */
+.task-stats {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+}
+
+/* Task Card */
+#taskList li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+#taskList li:hover {
+  transform: translateY(-3px);
+}
+
+/* Text */
+#taskList li span {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* Completed */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.done-btn {
+  background: #00ff9d;
+  color: black;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.done-btn,
+.delete-btn {
+  border: none;
+  padding: 5px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.done-btn:hover,
+.delete-btn:hover {
+  transform: scale(1.1);
+}
